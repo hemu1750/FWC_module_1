@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{fontenc}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{circuitikz}
+\usepackage{titlesec}
+\date{\today}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+\pagestyle{empty}
+\begin{document}
+\thispagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[width=8cm, height=1.7cm]{logo.png}}
+\fancyhead[R]{
+
+   Name:Hemanth Thatavarthi\\
+   Batch:COMETFWC033\\
+   Date:06 August 2025\\
+}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[c]{\thepage}
+\vspace*{0.1cm}
+\begin{center}
+\textbf{\Huge GATE EE 2018  PAPER}
+\end{center}
+\section*{Question 18}
+\begin{itemize}[label={},leftmargin=0pt]
+\item Let $f$ be a real-valued function of a real variable defined as
+\item $f(x) = x - \lfloor x \rfloor,$
+\item where $\lfloor x \rfloor$ denotes the largest integer less than or equal to $x$.  
+\item Compute
+\item $\int_{0.25}^{1.25} f(x)\, dx$ (up to 2 decimal places).
+\section*{\textcolor{blue}{Solution}}
+    \item Lets splite the integral
+    \item  $\int_{0.25}^{1.25} (x - \lfloor x \rfloor) \, dx = \int_{0.25}^{1} x \, dx + \int_{1}^{1.25} (x - 1) \, dx$
+    \item Lets compute 1st part of intergal
+    \item $\int_{0.25}^{1} x \, dx = \left. \frac{x^2}{2} \right|_{0.25}^{1} = \frac{1}{2} - \frac{0.25^2}{2} = 0.5 - 0.03125 = 0.46875$
+    \item Lets compute 2nd part of integral
+    \item $\int_{1}^{1.25} (x - 1) \, dx = \left. \frac{x^2}{2} \right|_{1}^{1.25} - \left. x \right|_{1}^{1.25} = (0.78125 - 0.5) - 0.25 = 0.03125$
+    \item Add the individually computed values.
+    \item $\int_{0.25}^{1.25} f(x) \, dx = 0.46875 + 0.03125 = 0.5$
+    \item The final answer is $\boxed{0.50}$
+\end{itemize}
+\end{document}

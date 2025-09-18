@@ -1,0 +1,141 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\geometry{
+  top=1in,
+  bottom=1in,
+  left=1in,
+  right=1in
+}
+
+%Header and Footer
+\pagestyle{plain}
+\renewcommand{\headrulewidth}{0pt} % remove header line
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\begin{document}
+\thispagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{\includegraphics[width=8cm, height = 2cm]{logo.png}}
+\fancyhead[R]{Name: Hemanth Thatavarthi \\ Batch: COMET.FWC33 \\ Date: 04 August 2025}
+\fancyfoot[C]{\thepage}
+% Title
+\vspace*{0.1em}
+\section*{Tenth International Olympiad, 1968}
+
+\begin{enumerate}
+    \item Prove that there is one and only one triangle whose side lengths are consecutive integers, and one of whose angles is twice as large as another.
+
+    \item Find all natural numbers \( x \) such that the product of their digits (in decimal notation) is equal to \( x^2 - 10x - 22 \).
+
+    \item Consider the system of equations
+    $
+    ax_1^2 + bx_1 + c = x_2 \\
+    ax_2^2 + bx_2 + c = x_3 \\
+    \vdots \\
+    ax_n^2 + bx_n + c = x_1,
+    $
+    with unknowns \( x_1, x_2, \dots, x_n \), where \( a, b, c \) are real and \( a \ne 0 \). Let \( \Delta = (b - 1)^2 - 4ac \). Prove that for this system:
+    \begin{itemize}
+        \item[(a)] if \( \Delta < 0 \), there is no solution,
+        \item[(b)] if \( \Delta = 0 \), there is exactly one solution,
+        \item[(c)] if \( \Delta > 0 \), there is more than one solution.
+    \end{itemize}
+
+    \item Prove that in every tetrahedron there is a vertex such that the three edges meeting there have lengths which are the sides of a triangle.
+
+    \item Let \( f \) be a real-valued function defined for all real numbers \( x \) such that, for some positive constant \( a \), the equation
+    $
+    f(x + a) = \frac{1}{2} + \sqrt{f(x) - [f(x)]^2}
+    $
+    holds for all \( x \).
+    \begin{itemize}
+        \item[(a)] Prove that the function \( f \) is periodic (i.e., there exists a positive number \( b \) such that \( f(x + b) = f(x) \) for all \( x \)).
+        \item[(b)] For \( a = 1 \), give an example of a non-constant function with the required properties.
+    \end{itemize}
+
+    \item For every natural number \( n \), evaluate the sum
+    $
+    \sum_{k=0}^{\infty} \left\lfloor \frac{n + 2k}{2k + 1} \right\rfloor = \left\lfloor \frac{n + 1}{2} \right\rfloor + \left\lfloor \frac{n + 2}{4} \right\rfloor + \cdots + \left\lfloor \frac{n + 2k}{2k + 1} \right\rfloor + \cdots
+    $
+    (The symbol \( \lfloor x \rfloor \) denotes the greatest integer not exceeding \( x \).)
+
+\end{enumerate}
+\section*{Eleventh International Olympiad, 1969}
+
+\begin{enumerate}
+
+    \item Prove that there are infinitely many natural numbers \( a \) with the following property: the number \( z = n^4 + a \) is not prime for any natural number \( n \).
+
+    \item Let \( a_1, a_2, \dots, a_n \) be real constants, \( x \) a real variable, and
+    $
+    f(x) = \cos(a_1 + x) + \frac{1}{2} \cos(a_2 + x) + \frac{1}{4} \cos(a_3 + x) + \cdots + \frac{1}{2^{n-1}} \cos(a_n + x).
+    $
+    Given that \( f(x_1) = f(x_2) = 0 \), prove that \( x_2 - x_1 = m\pi \) for some integer \( m \).
+
+    \item For each value of \( k = 1, 2, 3, 4, 5 \), find necessary and sufficient conditions on the number \( a > 0 \) so that there exists a tetrahedron with \( k \) edges of length \( a \), and the remaining \( 6 - k \) edges of length 1.
+
+    \item A semicircular arc \( \gamma \) is drawn on \( AB \) as diameter. \( C \) is a point on \( \gamma \) other than \( A \) and \( B \), and \( D \) is the foot of the perpendicular from \( C \) to \( AB \). We consider three circles, \( \gamma_1, \gamma_2, \gamma_3 \), all tangent to the line \( AB \). Of these, \( \gamma_1 \) is inscribed in \( \triangle ABC \), while \( \gamma_2 \) and \( \gamma_3 \) are both tangent to \( CD \) and to \( \gamma \), one on each side of \( CD \). Prove that \( \gamma_1, \gamma_2 \), and \( \gamma_3 \) have a second tangent in common.
+
+    \item Given \( n > 4 \) points in the plane such that no three are collinear. Prove that there are at least
+    $
+    \binom{n - 3}{2}
+    $
+    convex quadrilaterals whose vertices are four of the given points.
+
+    \item Prove that for all real numbers \( x_1, x_2, y_1, y_2, z_1, z_2 \), with \( x_1 > 0 \), \( x_2 > 0 \), \( x_1y_1 - z_1^2 > 0 \), \( x_2y_2 - z_2^2 > 0 \), the inequality
+    $
+    \frac{8}{(x_1 + x_2)(y_1 + y_2) - (z_1 + z_2)^2} \leq \frac{1}{x_1y_1 - z_1^2} + \frac{1}{x_2y_2 - z_2^2}
+    $
+    is satisfied. Give necessary and sufficient conditions for equality.
+\section*{Twelfth International Olympiad, 1970}
+\end{enumerate}
+\begin{enumerate}
+
+    \item Let \( M \) be a point on the side \( AB \) of triangle \( \triangle ABC \). Let \( r_1, r_2, r \) be the radii of the inscribed circles of triangles \( \triangle AMC, \triangle BMC \), and \( \triangle ABC \), respectively. Let \( q_1, q_2, q \) be the radii of the escribed circles of the same triangles that lie in the angle \( \angle ACB \). Prove that
+    $
+    \frac{r_1}{q_1} \cdot \frac{r_2}{q_2} = \frac{r}{q}.
+    $
+
+    \item Let \( a, b, n \) be integers greater than 1, and let \( a \) and \( b \) be the bases of two number systems. Let \( A_n, A_{n-1} \) be numbers in the system with base \( a \), and \( B_n, B_{n-1} \) be numbers in the system with base \( b \), defined as follows:
+    $
+    A_n = x_nx_{n-1} \cdots x_0, \quad A_{n-1} = x_{n-1}x_{n-2} \cdots x_0, \\
+    B_n = x_nx_{n-1} \cdots x_0, \quad B_{n-1} = x_{n-1}x_{n-2} \cdots x_0,
+    $
+    with \( x_n \ne 0 \), \( x_{n-1} \ne 0 \). Prove that
+    $
+    \frac{A_{n-1}}{A_n} < \frac{B_{n-1}}{B_n}
+    \quad \text{if and only if} \quad a > b.
+    $
+
+    \item The real numbers \( a_0, a_1, \dots, a_n, \dots \) satisfy the condition:
+    $
+    1 = a_0 \le a_1 \le a_2 \le \cdots \le a_n \le \cdots
+    $
+    Define the numbers \( b_1, b_2, \dots, b_n, \dots \) by
+    $
+    b_n = \sum_{k=1}^{n} \left( \frac{1 - a_{k-1}/a_k}{\sqrt{a_k}} \right).
+    $
+    \begin{itemize}
+        \item[(a)] Prove that \( 0 \le b_n < 2 \) for all \( n \).
+        \item[(b)] Given \( c \) with \( 0 \le c < 2 \), prove that there exist numbers \( a_0, a_1, \dots \) with the above properties such that \( b_n > c \) for large enough \( n \).
+    \end{itemize}
+
+    \item Find the set of all positive integers \( n \) such that the set \( \{n, n+1, n+2, n+3, n+4, n+5\} \) can be partitioned into two subsets whose products are equal.
+
+    \item In the tetrahedron \( ABCD \), \( \angle BDC = 90^\circ \). Suppose the foot \( H \) of the perpendicular from \( D \) to the plane \( ABC \) is the intersection of the altitudes of \( \triangle ABC \). Prove that
+    $
+    (AB + BC + CA)^2 \le 6(AD^2 + BD^2 + CD^2).
+    $
+    For what tetrahedra does equality hold?
+
+    \item In a plane there are 100 points, no three of which are collinear. Consider all possible triangles having these points as vertices. Prove that no more than 70\% of these triangles are acute-angled.
+
+\end{enumerate}
+\end{document}
